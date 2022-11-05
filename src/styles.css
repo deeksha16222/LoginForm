@@ -1,0 +1,93 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+input,
+button {
+  outline: none;
+  appearance: none;
+  border: none;
+  background: none;
+}
+.App {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: purple;
+}
+
+form {
+  display: block;
+  position: relative;
+}
+form:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  z-index: 1;
+  background-image: linear-gradient(to bottom right, purple, #fe4880);
+}
+form .form-inner {
+  position: relative;
+  display: block;
+  padding: 30px;
+  color: #fff;
+  z-index: 2;
+}
+form .form-inner h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+form .form-inner .form-group {
+  margin-bottom: 15px;
+  display: block;
+  width: 300px;
+}
+.form-inner .form-group label {
+  display: block;
+  color: white;
+  font-size: 20px;
+  transition: 0.4s ease-out;
+  margin-bottom: 5px;
+}
+
+.form-inner .form-group:focus-within label {
+  color: #fe4880;
+}
+.form-inner .form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  transition: 0.4s ease-out;
+}
+.form-inner .form-group input:focus {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+#submit {
+  display: inline-block;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 15px;
+  margin-left: 80px;
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: white;
+  background-image: linear-gradient(to right, white, white);
+  transition: 0.4s;
+}
+#submit:hover {
+  background-position: 100% 0%;
+}
